@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Survey Management Panel</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		
+		<script type="text/javascript">
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+		
+			<h1><p>Survey Management Panel</p></h1>
+			
+			<!-- Toolbar -->
+			<div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="create.html">Create Survey</a></li>
+                    <li><a href="assign.html">Assign patient a survey</a></li>
+                    <li><a href="viewresults.html">View results</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+			
+			<div class="bs-example">
+	<center><h1>Create a Survey</h1></center>
+	<br />
+	<br />
+    <form action="http://localhost:3000/savesurvey" method="post">
+        <div class="form-group">
+            <h2>Survey Name</h2>
+			<div class="row">
+				<div class="col-xs-10">
+					<input type="text" name="surveyname" class="form-control" id="inputSurveyName" placeholder="Survey Name">
+				</div>
+			</div>
+        </div>
+		
+		<br \>
+		<h2>Question1</h2>
+		<br \>
+		<div class="form-group">
+		
+			<div class="row">
+				<label class="control-label col-xs-2">Question Title</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" name="q1title" id="q1Title" placeholder="Question Title">
+				</div>
+			</div>
+			
+			<div class="row">
+				<label for="q1Title" class="control-label col-xs-2">Layout Type</label>
+				<div class="col-xs-10">
+					<div class="btn-group">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="radio" name="q1yesno" id="q1option1"> Yes or No
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q1likert" id="q1option2"> Likert Scale
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q1open" id="q1option3"> Open-ended
+							</label>
+						 </div>
+					</div>
+				</div>
+			</div> 
+			
+		</div> 
+		
+				<br \>
+		<h2>Question2</h2>
+		<br \>
+		<div class="form-group">
+		
+			<div class="row">
+				<label for="q2Title" class="control-label col-xs-2">Question Title</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" name="q2title" id="q1Title" placeholder="Question Title">
+				</div>
+			</div>
+			
+			<div class="row">
+				<label class="control-label col-xs-2">Layout Type</label>
+				<div class="col-xs-10">
+					<div class="btn-group">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="radio" name="q2yesno" id="q2option1"> Yes or No
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q2likert" id="q2option2"> Likert Scale
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q2open" id="q2option3"> Open-ended
+							</label>
+						 </div>
+					</div>
+				</div>
+			</div> 
+			
+		</div> 
+		
+				<br \>
+		<h2>Question3</h2>
+		<br \>
+		<div class="form-group">
+		
+			<div class="row">
+				<label for="q3Title" class="control-label col-xs-2">Question Title</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" name="q3title" id="q1Title" placeholder="Question Title">
+				</div>
+			</div>
+			
+			<div class="row">
+				<label class="control-label col-xs-2">Layout Type</label>
+				<div class="col-xs-10">
+					<div class="btn-group">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="radio" name="q3yesno" id="q3option1"> Yes or No
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q3likert" id="q3option2"> Likert Scale
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q3open" id="q3option3"> Open-ended
+							</label>
+						 </div>
+					</div>
+				</div>
+			</div> 
+			
+		</div> 
+		
+				<br \>
+		<h2>Question4</h2>
+		<br \>
+		<div class="form-group">
+		
+			<div class="row">
+				<label for="q4Title" class="control-label col-xs-2">Question Title</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" name="q4title" id="q1Title" placeholder="Question Title">
+				</div>
+			</div>
+			
+			<div class="row">
+				<label class="control-label col-xs-2">Layout Type</label>
+				<div class="col-xs-10">
+					<div class="btn-group">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="radio" name="q4yesno" id="q4option1"> Yes or No
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q4likert" id="q4option2"> Likert Scale
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q4open" id="q4option3"> Open-ended
+							</label>
+						 </div>
+					</div>
+				</div>
+			</div> 
+		
+				<br \>
+		<h2>Question5</h2>
+		<br \>
+		<div class="form-group">
+		
+			<div class="row">
+				<label for="q5Title" class="control-label col-xs-2">Question Title</label>
+				<div class="col-xs-10">
+					<input type="text" class="form-control" name="q5title" id="q5Title" placeholder="Question Title">
+				</div>
+			</div>
+			
+			<div class="row">
+				<label  class="control-label col-xs-2">Layout Type</label>
+				<div class="col-xs-10">
+					<div class="btn-group">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary">
+							  <input type="radio" name="q5yesno" id="q5option1"> Yes or No
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q5likert" id="q5option2"> Likert Scale
+							</label>
+							<label class="btn btn-primary">
+							  <input type="radio" name="q5open" id="q5option3"> Open-ended
+							</label>
+						 </div>
+					</div>
+				</div>
+			</div> 
+			
+		</div> 
+
+    </div>
+		<br />
+		<br />
+        <center><button type="submit" class="btn btn-primary">Submit</button><center>
+		</form>
+		
+		
+		</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src=”js/bootstrap.js”></script>
+	</body>
+</html>
+
